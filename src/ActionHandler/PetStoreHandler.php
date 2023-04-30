@@ -9,7 +9,7 @@
 namespace CommonGateway\PetStoreBundle\ActionHandler;
 
 use CommonGateway\CoreBundle\ActionHandler\ActionHandlerInterface;
-use CommonGateway\PetStoreBundle\Service\PetStoreService;
+use CommonGateway\PetStoreBundle\Service\CrawlerService;
 
 
 class PetStoreHandler implements ActionHandlerInterface
@@ -18,17 +18,17 @@ class PetStoreHandler implements ActionHandlerInterface
     /**
      * The pet store service used by the handler
      *
-     * @var PetStoreService
+     * @var CrawlerService
      */
-    private PetStoreService $petStoreService;
+    private CrawlerService $petStoreService;
 
 
     /**
      * The constructor
      *
-     * @param PetStoreService $petStoreService The pet store service
+     * @param CrawlerService $petStoreService The pet store service
      */
-    public function __construct(PetStoreService $petStoreService)
+    public function __construct(CrawlerService $petStoreService)
     {
         $this->petStoreService = $petStoreService;
 

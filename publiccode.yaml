@@ -16,4 +16,4 @@ description:
   nl:
     shortDescription: "CrawlerBundle"
   en:
-    shortDescription: "CrawlerBundle"
+    shortDescription: "The crawler bundle provides basic functionality for crawling online resources such as websites"
